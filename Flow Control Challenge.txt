@@ -1,0 +1,24 @@
+In this assignment you will practise flow control by building and playing in your own casino. 
+Your dealer will be the computer and for that you will make use of the python module random.
+
+Exercise 1 - Red or Black? You Choose
+
+1.1 You are going to play roulette but you only play red or black.
+At this time you are only playing once. 
+Remember the rules: 
+1. For simplicity let's suppose there are only 2 possibilities (Red and Black)
+2. If the roulette lands on your chosen color you win double of what you've bet, if you loose you loose all the amount you bet.
+You will start with a "balance" of 1000€ and at the end of the play you need to update your balance accordingly if you win or loose. Be sure to only make one bet. You must run your solution in the cell below, together with the given variables.
+
+1.2 Using a for loop to play the roulette 50 times.
+At each iteration you should randomly generate a play outcome, which should be either "black" or "red" and append each outcome (red or black) to the "outcomes" list. Assume you only bet on either "red" or "black" for all plays. Likewise ex1.1, solve the exercise in the same cell where variables are given.
+
+1.3 The odds are always in favor of the casino and the roulette is no exception.
+That is why the roulette has 18 red numbers, 18 black numbers and 1 green number (the zero). This green number is what tilts the odds in the casino's favour. Adapt your code so that you now account for the green number. Note that you won't bet on "green" but rather see how it influences the final balance, so "bet_choice" should be either "black" or "red".
+Remember that red/black and the green number don't have the same probability of being drawn: there are 18 red numbers, 18 black numbers and only 1 green number. You must take this information into account when simulating a roulette outcome. Thus, 
+Write again a for loop to play the game 50 times. At each iteration, you should randomly generate an outcome:
+- "black", "red" or "green" **out of the 37 options (18 reds, 18 blacks, 1 green)**
+Append each play outcome to the `outcomes` list. See with how much money you end up.
+
+1.4 Now instead of having a defined number of plays, you want to play until you don't have more money to place another bet.
+Instead of having a defined number of plays, use a while loop and play the game considering only "black" and "red" outcomes until you run out of money. Output a variable "ofm_number_of_plays" which is the number of plays you were able to make until you run out of money. Append the outcome of each play to the "outcomes" list.
